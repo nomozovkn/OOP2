@@ -1,0 +1,87 @@
+namespace OOP
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Student> students = new List<Student>();
+            Student firstStudent = new Student();
+
+            firstStudent.UserName = "Kamoliddin";
+            firstStudent.LastName = "Nomozov";
+            firstStudent.University = "TDTU";
+            firstStudent.FormOfEducation = "External";
+            firstStudent.StudentPhoneNumber = "+998770712606";
+            firstStudent.AcademicYear = "2021-2025";
+
+            Student secondStudent = new Student();
+            secondStudent.UserName = "Jaloliddin";
+            secondStudent.LastName = "Umirzoqov";
+            secondStudent.University = "TDTU";
+            secondStudent.FormOfEducation = "External";
+            secondStudent.StudentPhoneNumber = "+998770712152";
+            secondStudent.AcademicYear = "2021-2025";
+
+            Student thirdStudent = new Student();
+            thirdStudent.UserName = "MUhammadali";
+            thirdStudent.LastName = "Soidov";
+            thirdStudent.University = "TATU";
+            thirdStudent.FormOfEducation = "External";
+            thirdStudent.StudentPhoneNumber = "+998301334562";
+            thirdStudent.AcademicYear = "2021-2025";
+
+            Student fourStudent = new Student();
+            fourStudent.UserName = "RAximov";
+            fourStudent.LastName = "Islom";
+            fourStudent.University = "TDTU";
+            fourStudent.FormOfEducation = "External";
+            fourStudent.StudentPhoneNumber = "+998770712606";
+            fourStudent.AcademicYear = "2021-2025";
+
+            firstStudent.DisplayInfo();
+            Console.WriteLine();
+            secondStudent.DisplayInfo();
+            Console.WriteLine();
+            thirdStudent.DisplayInfo();
+            Console.WriteLine();
+            fourStudent.DisplayInfo();
+            Console.WriteLine("===============================");
+            List<Animal> animals = new List<Animal>();
+            var firstAnimal = new Animal();
+            firstAnimal.Name = "Horse";
+            firstAnimal.Kind = "A mammal";
+            firstAnimal.Age = 5;
+            firstAnimal.Gender = "Male";
+            firstAnimal.LivingEnvironment = "Pet";
+
+            var secondAnimal = new Animal();
+            secondAnimal.Name = "Lion";
+            secondAnimal.Kind = "A mammal";
+            secondAnimal.Age = 5;
+            secondAnimal.Gender = "Male";
+            secondAnimal.LivingEnvironment = "Wild animal ";
+            firstAnimal.DisplayInfo();
+            Console.WriteLine();
+            secondAnimal.DisplayInfo();
+            Console.WriteLine("===============================");
+            List<Computer> computers = new List<Computer>();
+            var firstComputer = new Computer();
+            firstComputer.Name = "Acer";
+            firstComputer.OperatingSystem = "Windows";
+            firstComputer.Memory = 512;
+            firstComputer.QuickMemory = 16;
+            firstComputer.Processor = "CORE 5";
+            var secondComputer = new Computer();
+            secondComputer.Name = "HP";
+            secondComputer.OperatingSystem = "Windows";
+            secondComputer.Memory = 512;
+            secondComputer.QuickMemory = 16;
+            secondComputer.Processor = "CORE 7";
+            firstComputer.DisplayInfo();
+            Console.WriteLine();
+            secondComputer.DisplayInfo();
+
+        }
+    }
+
+}
